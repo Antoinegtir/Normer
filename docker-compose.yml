@@ -1,0 +1,8 @@
+version: '3'
+services:
+  my-service:
+    build: .
+    container_name: my-container
+    command: bash normz.sh arg1
+    volumes:
+      - .:/app
